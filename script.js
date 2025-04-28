@@ -59,3 +59,14 @@ window.addEventListener('scroll', function() {
 const navbar = document.getElementById('navbar');
 navbar.classList.toggle('sticky', window.scrollY > 0);
 });
+// Popup Show
+window.onload = function() {
+setTimeout(() => {
+document.getElementById("popup").style.display = "flex";
+}, 600); // 0.6 second delay
+};
+
+// Close Popup
+function closePopup() {
+document.getElementById("popup").style.display = "none";
+}
